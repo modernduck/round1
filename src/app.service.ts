@@ -47,6 +47,11 @@ export class AppService {
       ),
     );
   }
+  /**
+   * get Account balance in Wei, Eth and USD
+   * @param {string} address
+   * @returns {Promise<BalanceResponse>}
+   */
   async getBalance(address: string): Promise<BalanceResponse> {
     const ethBalance = await this.getEtherBalance(address);
     const ethPrice = await this.getEtherPrice();
