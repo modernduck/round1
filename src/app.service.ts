@@ -39,7 +39,7 @@ export class AppService {
    */
   getEtherPrice(): Promise<string> {
     return firstValueFrom(
-      this.httpService.get(Environment.COIN_GECKO_ETH_BALANCE_URI).pipe(
+      this.httpService.get(Environment.COIN_GECKO_ETH_PRICE_URI).pipe(
         catchError((e) => {
           throw new HttpException(e.response.data, e.response.status);
         }),
