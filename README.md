@@ -22,9 +22,10 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Goal
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Write a backend service that will perform a query to the Etherscan Accounts API (https://docs.etherscan.io/api-endpoints/accounts) and returns the value in USD of the accounts Ethereum balance. 
+
 
 ## Installation
 
@@ -58,15 +59,18 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Research
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### https://github.com/blockcoders/nestjs-ethers
 
-## Stay in touch
+this look too overkill + too small devs
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Room for improvement
+
+* More detail test cases
+* Caching instead of direct query
+* Version /v1 /v2
+* Class Validator
 
 ## License
 
