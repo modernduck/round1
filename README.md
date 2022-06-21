@@ -58,13 +58,6 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Research
-
-### https://github.com/blockcoders/nestjs-ethers
-
-this look too overkill + too small devs
-
 ## Room for improvement
 
 * More detail test cases
