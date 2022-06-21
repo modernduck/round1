@@ -24,7 +24,7 @@ describe('AppController', () => {
     it('should return correct response', async () => {
       jest.spyOn(httpService, 'get').mockImplementation((url: string) => {
         switch (url) {
-          case Environment.COIN_GECKO_ETH_BALANCE_URI:
+          case Environment.COIN_GECKO_ETH_PRICE_URI:
             return of({
               data: {
                 market_data: {

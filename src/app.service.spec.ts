@@ -81,7 +81,7 @@ describe('App Service', () => {
     it('should return wei,eth and usd price correctly', async () => {
       jest.spyOn(httpService, 'get').mockImplementation((url: string) => {
         switch (url) {
-          case Environment.COIN_GECKO_ETH_BALANCE_URI:
+          case Environment.COIN_GECKO_ETH_PRICE_URI:
             return of({
               data: {
                 market_data: {
